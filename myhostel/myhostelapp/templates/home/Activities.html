@@ -1,9 +1,56 @@
 {% extends 'origin.html' %}
 {% block content %}
 {% load static %}
+<link rel="stylesheet" href="{% static 'fontawesome-free-5.15.3-web/css/all.css' %}">
 <h1>YOUR ALL ACTIVITIES ARE RECORD HERE</h1>
-<video width="350" height="430" controls controlslist="nodownload nofullscreen noremoteplayback">
-    <source src="{% static 'video1.mp4' %}">
-</video>    
+<h1>hyyy</h1>
+<video id="video-player" controls width="350" height="430">
+    <source src="{% static 'video1.mp4' %}" type="video/mp4">
+  </video>
+  
+  
+<style>
+    #video-player::-webkit-media-controls-enclosure {
+        display: none !important;
+    }
+    
+    #video-player::-webkit-media-controls-panel {
+        display: -webkit-box !important;
+        position: relative;
+        z-index: 2147483647;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #video-player::-webkit-media-controls-play-button {
+        display: block !important;
+        -webkit-appearance: media-play-button;
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        font-size: 2em;
+        line-height: 50px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    #video-player::-webkit-media-controls-play-button:before {
+        content: "\25BA";
+    }
+    
+    #video-player::-webkit-media-controls-pause-button {
+        display: none !important;
+    }
+    
 
+</style>
+  
 {% endblock %}
