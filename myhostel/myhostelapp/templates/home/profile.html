@@ -1,0 +1,9 @@
+{% extends 'origin.html' %}
+{% block content %}
+{%load static%}
+<h1>Hostel Profile video is showing below</h1>
+<video width="350" height="430" controls controlslist="nodownload,nofullscreen,noremoteplayback,noembed,novolume,noprogress">
+    <source src="{% static 'video1.mp4' %}">
+</video>    
+{%endblock%}
+
