@@ -1,4 +1,10 @@
 {% extends 'origin.html' %}
+<body>
+{% load static %}
 {% block content %}
-<h1>THERE IS NO NOTICE FOR YOU</h1>
+<marquee behavior="scroll" direction="left">
+    <a href="/profile">Click me to go to another page!</a>
+</marquee>
+  
 {% endblock %}
+</body>

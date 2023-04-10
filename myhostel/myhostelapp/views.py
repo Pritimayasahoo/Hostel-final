@@ -18,3 +18,6 @@ def profile(request):
 
 def Staffs(request):
     return render(request,'home/staffs.html')
+
+def Students(request):
+    return render(request,'home/students.html')

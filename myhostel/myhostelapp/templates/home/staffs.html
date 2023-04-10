@@ -5,29 +5,99 @@
     h1{
         color green;
     }
+    .my-video-class::-webkit-media-controls-enclosure {
+        display: none !important;
+    }
+    
+    .my-video-class::-webkit-media-controls-panel {
+        display: -webkit-box !important;
+        position: relative;
+        z-index: 2147483647;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .my-video-class::-webkit-media-controls-play-button {
+        display: block !important;
+        -webkit-appearance: media-play-button;
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        font-size: 2em;
+        line-height: 50px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .my-video-class::-webkit-media-controls-play-button:before {
+        content: "\25BA";
+    }
+    
+    .my-video-class::-webkit-media-controls-pause-button {
+        display: none !important;
+    }
+    
 </style>    
 <h1>OUR STAFFS ARE HERE For YOUR HELP</h1>
 <div class="desk">
     <br>
-    <h4>&nbsp;&#160;&#160;&#160;&#160;&#160;&#160;&#160;FROM THE SUPERIDENT'S DESK</h4>
+    <h4>&nbsp;&#160;&#160;&#160;&#160;&#160;&#160;&#160;SUPERIDENT'S OPINION</h4>
     <br>
-    <p><video  controls controlslist="nodownload" width=200 height=300 class="my-class">
-        <source src="{% static 'video1.mp4' %}">
+    <p><video  controls controlslist="nodownload" width=350 height=300 class="my-video-class">
+        <source src="{% static 'shaktiman.mp4' %}">
     </video> 
-      This is some text. This is some text. This is some text.<br>
-      This is some text. This is some text. This is some text.<br>
-      This is some text. This is some text. This is some text.<br>
-      This is some text. This is some text. This is some text.<br>
-      This is some text. This is some text. This is some text.<br>
-      This is some text. This is some text. This is some text.<br>
-      This is some text. This is some text. This is some text.<br>
-      This is some text. This is some text. This is some text.<br>
-      This is some text. This is some text. This is some text.<br>
-      This is some text. This is some text. This is some text.<br>
-      This is some text. This is some text. This is some text.<br>
-      This is some text. This is some text. This is some text.<br>
-      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.This is some text. This is some text. This is some text.<br>
+      This is some text. This is some text. This is some text.This is some text. This is some text. This is some text.<br>
+      This is some text. This is some text. This is some text.This is some text. This is some text. This is some text.<br>
+      This is some text. This is some text. This is some text.This is some text. This is some text. This is some text.<br>
+      This is some text. This is some text. This is some text.This is some text. This is some text. This is some text.<br>
+      This is some text. This is some text. This is some text.This is some text. This is some text. This is some text.
+      
       </p>
     <br>  
     </div>
+    <br>
+    <div class="desk2">
+        <br>
+        <h4>ASISTANCE SUPERIDENT'S OPINION</h4>
+        <br>
+        <p><video  controls controlslist="nodownload" width=350 height=300 class="my-video-class">
+            <source src="{% static 'shaktiman.mp4' %}">
+        </video> 
+          This is some text. This is some text. This is some text.This is some text. This is some text. This is some text.<br>
+          This is some text. This is some text. This is some text.This is some text. This is some text. This is some text.<br>
+          This is some text. This is some text. This is some text.This is some text. This is some text. This is some text.<br>
+          This is some text. This is some text. This is some text.This is some text. This is some text. This is some text.<br>
+          This is some text. This is some text. This is some text.This is some text. This is some text. This is some text.<br>
+          This is some text. This is some text. This is some text.This is some text. This is some text. This is some text.
+          
+          </p>
+        <br>  
+        </div>
+        <br>
+        <div class="desk">
+            <br>
+            <h4>CASIOR'S OPINION</h4>
+            <br>
+            <p><video  controls controlslist="nodownload" width=350 height=300 class="my-video-class">
+                <source src="{% static 'shaktiman.mp4' %}">
+            </video> 
+              This is some text. This is some text. This is some text.This is some text. This is some text. This is some text.<br>
+              This is some text. This is some text. This is some text.This is some text. This is some text. This is some text.<br>
+              This is some text. This is some text. This is some text.This is some text. This is some text. This is some text.<br>
+              This is some text. This is some text. This is some text.This is some text. This is some text. This is some text.<br>
+              This is some text. This is some text. This is some text.This is some text. This is some text. This is some text.<br>
+              This is some text. This is some text. This is some text.This is some text. This is some text. This is some text.
+              
+              </p>
+            <br>  
+            </div>
 {%endblock%}
